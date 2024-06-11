@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="This is the supplementary webpage for NeurIPS submission -- 4Real: Torwards Photorealistic 4D Scene Generation via Video Diffusion Models.">
+  <meta name="keywords" content="Gaussian Splatting, Dynamic novel view synthesis, 4Real, text-video generation, 4D generation, scene generation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compare 4Dfy</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="../static/css/bulma.min.css">
+  <link rel="stylesheet" href="../static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="../static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="../static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="../static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="../static/js/fontawesome.all.min.js"></script>
+  <script src="../static/js/bulma-carousel.min.js"></script>
+  <script src="../static/js/bulma-slider.min.js"></script>
+  <script src="../static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section>
+    <div>
+      <center><h3 class="title is-3">Per-frame deformation for reconstructing canonical representations</center>
+      <br>
+    </div>
+  
+  
+  <table align=center width=1000px>
+    <tr>
+      <td>
+        <center>
+          with
+        </center>
+      </td>
+      <td>
+        <center>
+          without
+        </center>
+      </td>
+      <td>
+        <center>
+          with
+        </center>
+      </td>
+      <td>
+        <center>
+          without
+        </center>
+      </td>
+    </tr>
+    <tr>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/goodvideos_144/repo_0508_debug_multiview_video24_Frm000_4.mp4'>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='video_no_per_frame_deform/repo_0508_debug_multiview_video24_Frm000_4.mp4'>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/goodvideos_144/repo_0508_debug_multiview_video29_Frm000_3.mp4'>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='video_no_per_frame_deform/repo_0508_debug_multiview_video29_Frm000_3.mp4'>
+        </center>
+      </td>
+
+    </tr>
+  
+    <tr>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/goodvideos_144/repo_0509_debug_multiview_video34_Frm000_17.mp4'>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='video_no_per_frame_deform/repo_0509_debug_multiview_video34_Frm000_17.mp4'>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/goodvideos_144/repo_0510_2ndpart_debug_multiview_video5_Frm000_2.mp4'>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='video_no_per_frame_deform/repo_0510_2ndpart_debug_multiview_video5_Frm000_2.mp4'>
+        </center>
+      </td>
+
+    </tr>
+
+  </table>
+  <br>
+  
+  </section>
+
+
+  <section>
+    <div>
+      <center><h3 class="title is-3">Reconstruct canonical representations from freeze-time videos</center>
+      <br>
+    </div>
+  
+  
+  <table align=center width=1000px>
+    <tr>
+      <td>
+        <center>
+          with
+        </center>
+      </td>
+      <td>
+        <center>
+          without
+        </center>
+      </td>
+      <td>
+        <center>
+          with
+        </center>
+      </td>
+      <td>
+        <center>
+          without
+        </center>
+      </td>
+    </tr>
+    <tr>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/goodvideos_144/repo_0508_debug_multiview_video24_Frm000_4.mp4'>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='video_no_freeze_time_video/repo_0508_debug_multiview_video24_Frm000_4.mp4'>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/goodvideos_144/repo_0508_debug_multiview_video29_Frm000_3.mp4'>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='video_no_freeze_time_video/repo_0508_debug_multiview_video29_Frm000_3.mp4'>
+        </center>
+      </td>
+
+    </tr>
+  
+    <tr>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/goodvideos_144/repo_0509_debug_multiview_video34_Frm000_17.mp4'>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='video_no_freeze_time_video/repo_0509_debug_multiview_video34_Frm000_17.mp4'>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/goodvideos_144/repo_0510_2ndpart_debug_multiview_video5_Frm000_2.mp4'>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='video_no_freeze_time_video/repo_0510_2ndpart_debug_multiview_video5_Frm000_2.mp4'>
+        </center>
+      </td>
+
+    </tr>
+
+  </table>
+  <br>
+  
+  </section>
+
+  <section>
+    <div>
+      <center><h3 class="title is-3">Multi-view SDS</center>
+      <br>
+    </div>
+  
+  
+  <table align=center width=1000px>
+    <tr>
+      <td>
+        <center>
+          with
+        </center>
+      </td>
+      <td>
+        <center>
+          without
+        </center>
+      </td>
+      <td>
+        <center>
+          with
+        </center>
+      </td>
+      <td>
+        <center>
+          without
+        </center>
+      </td>
+    </tr>
+    <tr>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/goodvideos_144/repo_0508_debug_multiview_video24_Frm000_4.mp4'>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='video_no_mv_sds/repo_0508_debug_multiview_video24_Frm000_4.mp4'>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/goodvideos_144/repo_0508_debug_multiview_video29_Frm000_3.mp4'>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='video_no_mv_sds/repo_0508_debug_multiview_video29_Frm000_3.mp4'>
+        </center>
+      </td>
+
+    </tr>
+  
+    <tr>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/goodvideos_144/repo_0509_debug_multiview_video34_Frm000_17.mp4'>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='video_no_mv_sds/repo_0509_debug_multiview_video34_Frm000_17.mp4'>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/goodvideos_144/repo_0510_2ndpart_debug_multiview_video5_Frm000_2.mp4'>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='video_no_mv_sds/repo_0510_2ndpart_debug_multiview_video5_Frm000_2.mp4'>
+        </center>
+      </td>
+
+    </tr>
+
+  </table>
+  <br>
+  
+  </section>
+
+  <section>
+    <div>
+      <center><h3 class="title is-3">Joint temporal and multi-view SDS</center>
+      <br>
+    </div>
+  
+  
+  <table align=center width=1000px>
+    <tr>
+      <td>
+        <center>
+          with
+        </center>
+      </td>
+      <td>
+        <center>
+          without
+        </center>
+      </td>
+      <td>
+        <center>
+          with
+        </center>
+      </td>
+      <td>
+        <center>
+          without
+        </center>
+      </td>
+    </tr>
+    <tr>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/goodvideos_144/repo_0508_debug_multiview_video24_Frm000_4.mp4'>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='video_no_sds/repo_0508_debug_multiview_video24_Frm000_4.mp4'>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/goodvideos_144/repo_0508_debug_multiview_video29_Frm000_3.mp4'>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='video_no_sds/repo_0508_debug_multiview_video29_Frm000_3.mp4'>
+        </center>
+      </td>
+
+    </tr>
+  
+    <tr>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/goodvideos_144/repo_0509_debug_multiview_video34_Frm000_17.mp4'>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='video_no_sds/repo_0509_debug_multiview_video34_Frm000_17.mp4'>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/goodvideos_144/repo_0510_2ndpart_debug_multiview_video5_Frm000_2.mp4'>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='video_no_sds/repo_0510_2ndpart_debug_multiview_video5_Frm000_2.mp4'>
+        </center>
+      </td>
+
+    </tr>
+
+  </table>
+  <br>
+  
+  </section>
+
+
+<script>
+  // Get the video element
+  var video = document.getElementById("short_video");
+
+  // Set the loop attribute to ensure continuous looping
+  video.loop = true;
+
+  // Set the playback range between frames 0 and 100
+  var startFrame = 0;
+  var endFrame = 1;
+
+  // Listen for the "timeupdate" event to continuously check the playback position
+  video.addEventListener("timeupdate", function() {
+      // Check if the current time is beyond the specified range
+      if (video.currentTime > endFrame) {
+          // Set the playback position back to the start frame
+          video.currentTime = startFrame;
+      }
+  });
+</script>
+
+</body>
+</html>
+
