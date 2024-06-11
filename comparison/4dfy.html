@@ -25,6 +25,33 @@
   <script src="../static/js/bulma-carousel.min.js"></script>
   <script src="../static/js/bulma-slider.min.js"></script>
   <script src="../static/js/index.js"></script>
+
+  <style>
+    .video-container {
+      position: relative;
+      display: inline-block;
+    }
+    .video-container video {
+        display: block;
+    }
+    .hover-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.7); /* semi-transparent background */
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none; /* so the text itself doesn't interfere with the hover */
+    }
+    .video-container:hover .hover-text {
+        opacity: 1;
+    }
+  </style>
+
 </head>
 <body>
 
@@ -63,53 +90,37 @@
   
       <td>
         <center>
-          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/3D_rendering_of_a_fox_playing_videogame.mp4'>
+          <div class="video-container">
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/3D_rendering_of_a_fox_playing_videogame.mp4'></video>
+          <div class="hover-text">3D rendering of a fox playing videogame.</div>
+        </div>
         </center>
       </td>
   
       <td>
         <center>
-          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/3D_rendering_of_a_fox_playing_videogame.mp4'>
+          <div class="video-container">
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/3D_rendering_of_a_fox_playing_videogame.mp4'></video>
+          <div class="hover-text">3D rendering of a fox playing videogame.</div>
+        </div>
         </center>
       </td>
   
       <td>
         <center>
-          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/a_baby_panda_eating_ice_cream.mp4'>
+          <div class="video-container">
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/a_baby_panda_eating_ice_cream.mp4'></video>
+          <div class="hover-text">A baby panda eating ice cream.</div>
+        </div>
         </center>
       </td>
   
       <td>
         <center>
-          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/a_baby_panda_eating_ice_cream.mp4'>
-        </center>
-      </td>
-  
-    </tr>
-  
-    <tr>
-  
-      <td>
-        <center>
-          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/a_baby_panda_reading_a_book.mp4'>
-        </center>
-      </td>
-  
-      <td>
-        <center>
-          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/a_baby_panda_reading_a_book.mp4'>
-        </center>
-      </td>
-  
-      <td>
-        <center>
-          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/a_bear_driving_a_car.mp4'>
-        </center>
-      </td>
-  
-      <td>
-        <center>
-          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/a_bear_driving_a_car.mp4'>
+          <div class="video-container">
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/a_baby_panda_eating_ice_cream.mp4'></video>
+          <div class="hover-text">A baby panda eating ice cream.</div>
+        </div>
         </center>
       </td>
   
@@ -119,25 +130,77 @@
   
       <td>
         <center>
-          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/a_building_on_fire.mp4'>
+          <div class="video-container">
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/a_baby_panda_reading_a_book.mp4'></video>
+          <div class="hover-text">A baby panda reading a book.</div>
+        </div>
         </center>
       </td>
   
       <td>
         <center>
-          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/a_building_on_fire.mp4'>
+          <div class="video-container">
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/a_baby_panda_reading_a_book.mp4'></video>
+          <div class="hover-text">A baby panda reading a book.</div>
+        </div>
         </center>
       </td>
   
       <td>
         <center>
-          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/a_bulldog_wearing_a_black_pirate_hat_eating_candy.mp4'>
+          <div class="video-container">
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/a_bear_driving_a_car.mp4'></video>
+          <div class="hover-text">A bear driving a car.</div>
+        </div>
         </center>
       </td>
   
       <td>
         <center>
-          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/a_bulldog_wearing_a_black_pirate_hat_eating_candy.mp4'>
+          <div class="video-container">
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/a_bear_driving_a_car.mp4'></video>
+          <div class="hover-text">A bear driving a car.</div>
+        </div>
+        </center>
+      </td>
+  
+    </tr>
+  
+    <tr>
+  
+      <td>
+        <center>
+          <div class="video-container">
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/a_building_on_fire.mp4'></video>
+          <div class="hover-text">A building on fire.</div>
+        </div>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <div class="video-container">
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/a_building_on_fire.mp4'></video>
+          <div class="hover-text">A building on fire.</div>
+        </div>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <div class="video-container">
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/a_bulldog_wearing_a_black_pirate_hat_eating_candy.mp4'></video>
+          <div class="hover-text">A bulldog wearing a black pirate hat eating candy.</div>
+        </div>
+        </center>
+      </td>
+  
+      <td>
+        <center>
+          <div class="video-container">
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/a_bulldog_wearing_a_black_pirate_hat_eating_candy.mp4'></video>
+          <div class="hover-text">A bulldog wearing a black pirate hat eating candy.</div>
+        </div>
         </center>
       </td>
   
@@ -147,25 +210,37 @@
   
       <td>
         <center>
-          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/a_firepit.mp4'>
+          <div class="video-container">
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/a_firepit.mp4'></video>
+          <div class="hover-text">A firepit.</div>
+        </div>
         </center>
       </td>
   
       <td>
         <center>
-          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/a_firepit.mp4'>
+          <div class="video-container">
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/a_firepit.mp4'></video>
+          <div class="hover-text">A firepit.</div>
+        </div>
         </center>
       </td>
   
       <td>
         <center>
-          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/a_goat_drinking_beer.mp4'>
+          <div class="video-container">
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/a_goat_drinking_beer.mp4'></video>
+          <div class="hover-text">A goat drinking beer.</div>
+        </div>
         </center>
       </td>
   
       <td>
         <center>
-          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/a_goat_drinking_beer.mp4'>
+          <div class="video-container">
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/a_goat_drinking_beer.mp4'></video>
+          <div class="hover-text">A goat drinking beer.</div>
+        </div>
         </center>
       </td>
   
@@ -175,25 +250,37 @@
   
       <td>
         <center>
-          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/a_humanoid_robot_playing_the_violin.mp4'>
+          <div class="video-container">
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/a_humanoid_robot_playing_the_violin.mp4'></video>
+          <div class="hover-text">A humanoid robot playing the violin.</div>
+        </div>
         </center>
       </td>
   
       <td>
         <center>
-          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/a_humanoid_robot_playing_the_violin.mp4'>
+          <div class="video-container">
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/a_humanoid_robot_playing_the_violin.mp4'></video>
+          <div class="hover-text">A humanoid robot playing the violin.</div>
+        </div>
         </center>
       </td>
   
       <td>
         <center>
-          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/a_lemur_holding_and_drinking_boba.mp4'>
+          <div class="video-container">
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/a_lemur_holding_and_drinking_boba.mp4'></video>
+          <div class="hover-text">A lemur holding and drinking boba.</div>
+        </div>
         </center>
       </td>
   
       <td>
         <center>
-          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/a_lemur_holding_and_drinking_boba.mp4'>
+          <div class="video-container">
+          <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/a_lemur_holding_and_drinking_boba.mp4'></video>
+          <div class="hover-text">A lemur holding and drinking boba.</div>
+        </div>
         </center>
       </td>
   
@@ -203,25 +290,37 @@
 
     <td>
       <center>
-        <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/a_monkey_eating_a_candy_bar.mp4'>
+        <div class="video-container">
+        <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/a_monkey_eating_a_candy_bar.mp4'></video>
+        <div class="hover-text">A monkey eating a candy bar.</div>
+      </div>
       </center>
     </td>
 
     <td>
       <center>
-        <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/a_monkey_eating_a_candy_bar.mp4'>
+        <div class="video-container">
+        <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/a_monkey_eating_a_candy_bar.mp4'></video>
+        <div class="hover-text">A monkey eating a candy bar.</div>
+      </div>
       </center>
     </td>
 
     <td>
       <center>
-        <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/an_alien_playing_the_piano.mp4'>
+        <div class="video-container">
+        <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/an_alien_playing_the_piano.mp4'></video>
+        <div class="hover-text">An alien playing the piano.</div>
+      </div>
       </center>
     </td>
 
     <td>
       <center>
-        <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/an_alien_playing_the_piano.mp4'>
+        <div class="video-container">
+        <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/an_alien_playing_the_piano.mp4'></video>
+        <div class="hover-text">An alien playing the piano.</div>
+      </div>
       </center>
     </td>
 
@@ -232,25 +331,37 @@
 
     <td>
       <center>
-        <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/corgi_running_on_grass.mp4'>
+        <div class="video-container">
+        <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/corgi_running_on_grass.mp4'></video>
+        <div class="hover-text">Corgi running on grass.</div>
+      </div>
       </center>
     </td>
 
     <td>
       <center>
-        <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/corgi_running_on_grass.mp4'>
+        <div class="video-container">
+        <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/corgi_running_on_grass.mp4'></video>
+        <div class="hover-text">Corgi running on grass.</div>
+      </div>
       </center>
     </td>
 
     <td>
       <center>
-        <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/cute_small_cat_sitting_eating_chicken_wiggs_watching_a_movie.mp4'>
+        <div class="video-container">
+        <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/cute_small_cat_sitting_eating_chicken_wiggs_watching_a_movie.mp4'></video>
+        <div class="hover-text">Cute small cat sitting eating chicken wiggs watching a movie.</div>
+      </div>
       </center>
     </td>
 
     <td>
       <center>
-        <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/cute_small_cat_sitting_eating_chicken_wiggs_watching_a_movie.mp4'>
+        <div class="video-container">
+        <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/cute_small_cat_sitting_eating_chicken_wiggs_watching_a_movie.mp4'></video>
+        <div class="hover-text">Cute small cat sitting eating chicken wiggs watching a movie.</div>
+      </div>
       </center>
     </td>
 
@@ -260,13 +371,19 @@
 
     <td>
       <center>
-        <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/water_spraying_out_of_a_firehydrant.mp4'>
+        <div class="video-container">
+        <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/ours_144/water_spraying_out_of_a_firehydrant.mp4'></video>
+        <div class="hover-text">Water spraying out of a firehydrant.</div>
+      </div>
       </center>
     </td>
 
     <td>
       <center>
-        <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/water_spraying_out_of_a_firehydrant.mp4'>
+        <div class="video-container">
+        <video class='round' autoplay muted loop playsinline style='height:120px' src='../resources/ours_vs_4dfy_144/4dfy_144/water_spraying_out_of_a_firehydrant.mp4'></video>
+        <div class="hover-text">Water spraying out of a firehydrant.</div>
+      </div>
       </center>
     </td>
 

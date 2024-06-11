@@ -88,6 +88,41 @@
       opacity: 1;
   }
 
+  .content.has-text-justified {
+    max-width: 1000px; /* Set your desired max width here */
+    margin: 0 auto; /* Center the div within its container */
+}
+
+.video-container {
+  position: relative;
+  display: inline-block;
+}
+.video-container video {
+    display: block;
+}
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7); /* semi-transparent background */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* so the text itself doesn't interfere with the hover */
+}
+.video-container:hover .hover-text {
+    opacity: 1;
+}
+
+
+
+  .flipped-video {
+      transform: scaleX(-1); /* Flips the video horizontally */
+  }
+
 
 </style>
 
@@ -173,11 +208,49 @@
 
   </div>
 
-  <center>
+  <!-- <center>
     <div class="gif-container">
-      <img src="resources/racoon_sync.gif" alt="Example GIF" style="max-width: 900px;">
+      <img src="resources/racoon_sync.gif" alt="Example GIF" style="width: 800px;">
       <div class="hover-text">A hamster wearing virtual reality headsets is a DJ in a disco.</div>
   </div>
+ </center> -->
+  <center>
+    <div class="video-container">
+    <video class='round' autoplay muted loop playsinline style='height:110px' src='resources/ours_mv/repo_0508_debug_multiview_video17_Frm000_10-mv.mp4'></video>
+    <div class="hover-text">A hamster wearing virtual reality headsets is a DJ in a disco.</div>
+    </div>
+  </center>
+  <center>
+    <div class="video-container">
+    <video class='round' autoplay muted loop playsinline style='height:110px' src='resources/ours_mv/repo_0509_debug_multiview_video29_Frm000_16-mv.mp4'></video>
+    <div class="hover-text">A bulldog wearing a black pirate hat eating candy.</div>
+    </div>
+  </center>
+  <center>
+    <div class="video-container">
+    <video class='round' autoplay muted loop playsinline style='height:110px' src='resources/ours_mv/repo_0509_debug_multiview_video35_Frm000_2-mv.mp4'></video>
+    <div class="hover-text">A cat eating chicken and watching TV.</div>
+    </div>
+  </center>
+  <center>
+    <div class="video-container">
+    <video class='round' autoplay muted loop playsinline style='height:110px' src='resources/ours_mv/repo_0509_debug_multiview_video4_Frm000_3-mv.mp4'></video>
+    <div class="hover-text">A crocodile playing drum.</div>
+    </div>
+  </center>
+  <center>
+    <div class="video-container">
+    <video class='round' autoplay muted loop playsinline style='height:110px' src='resources/ours_mv/repo_0504_debug_multiview_video84_Frm000_9_0-mv.mp4'></video>
+    <div class="hover-text">Time lapse of a flower blooming open.</div>
+    </div>
+  </center>
+
+  <center>
+    <div class="column has-text-centered">
+      <p>
+        <b>4Real</b> generates 4D gaussian splatting from input text prompts, and renders dynamic scene that can be viewed from different view points. 
+      </p>
+    </div>
   </center>
   </section>
 
@@ -186,10 +259,10 @@
 
 
     <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered"  >
+    <div class="columns is-centered has-text-centered"  width=1000px>
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified" style="max-width: 900px;">
+        <div class="content has-text-justified">
           <p>
             Existing dynamic scene generation methods mostly rely on distilling knowledge from pre-trained 3D generative models, which are typically fine-tuned on synthetic object datasets.
             As a result, the generated scenes are often object-centric and lack photorealism.
@@ -237,25 +310,25 @@
 
                   <td>
                     <center>
-                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0508_debug_multiview_video17_Frm000_10.mp4'>
+                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0508_debug_multiview_video17_Frm000_10.mp4'></video>
                     </center>
                   </td>
 
                   <td>
                     <center>
-                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0508_debug_multiview_video24_Frm000_4.mp4'>
+                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0508_debug_multiview_video24_Frm000_4.mp4'></video>
                     </center>
                   </td>
 
                   <td>
                     <center>
-                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/A_cat_singing.mp4'>
+                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/A_cat_singing.mp4'></video>
                     </center>
                   </td>
 
                   <td>
                     <center>
-                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/teddy_sample_demo.mp4'>
+                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/teddy_sample_demo.mp4'></video>
                     </center>
                   </td>
                 </tr>
@@ -263,50 +336,50 @@
 
                   <td>
                     <center>
-                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/A_baby_eating_ice_cream.mp4'>
+                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/A_baby_eating_ice_cream.mp4'></video>
                     </center>
                   </td>
 
                   <td>
                     <center>
-                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0504_debug_multiview_video113_Frm000_1_0.mp4'>
+                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0504_debug_multiview_video113_Frm000_1_0.mp4'></video>
                     </center>
                   </td>
 
                   <td>
                     <center>
-                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/a_bulldog_wearing_a_black_pirate_hat_eating_candy.mp4'>
+                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/a_bulldog_wearing_a_black_pirate_hat_eating_candy.mp4'></video>
                     </center>
                   </td>
 
                   <td>
                     <center>
-                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/a_lemur_holding_and_drinking_boba.mp4'>
+                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/a_lemur_holding_and_drinking_boba.mp4'></video>
                     </center>
                   </td>
                 </tr>
                 <tr>
                   <td>
                     <center>
-                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0508_debug_multiview_video29_Frm000_3.mp4'>
+                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0508_debug_multiview_video29_Frm000_3.mp4'></video>
                     </center>
                   </td>
 
                   <td>
                     <center>
-                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0510_2ndpart_debug_multiview_video7_Frm000_4.mp4'>
+                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0510_2ndpart_debug_multiview_video7_Frm000_4.mp4'></video>
                     </center>
                   </td>
 
                   <td>
                     <center>
-                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/corgi_running_on_grass.mp4'>
+                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/corgi_running_on_grass.mp4'></video>
                     </center>
                   </td>
 
                   <td>
                     <center>
-                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0509_debug_multiview_video34_Frm000_17.mp4'>
+                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0509_debug_multiview_video34_Frm000_17.mp4'></video>
                     </center>
                   </td>
                 </tr>
@@ -314,25 +387,25 @@
 
                   <td>
                     <center>
-                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0510_2ndpart_debug_multiview_video20_Frm000_12.mp4'>
+                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0510_2ndpart_debug_multiview_video20_Frm000_12.mp4'></video>
                     </center>
                   </td>
 
                   <td>
                     <center>
-                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0508_debug_multiview_video36_Frm000_18.mp4'>
+                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0508_debug_multiview_video36_Frm000_18.mp4'></video>
                     </center>
                   </td>
 
                   <td>
                     <center>
-                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/an_alien_playing_the_piano.mp4'>
+                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/an_alien_playing_the_piano.mp4'></video>
                     </center>
                   </td>
 
                   <td>
                     <center>
-                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/a_silver_humanoid_robot_flipping_a_coin.mp4'>
+                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/a_silver_humanoid_robot_flipping_a_coin.mp4'></video>
                     </center>
                   </td>
                     </tr>
@@ -341,25 +414,25 @@
 
                   <td>
                     <center>
-                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0510_2ndpart_debug_multiview_video13_Frm000_19.mp4'>
+                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0510_2ndpart_debug_multiview_video13_Frm000_19.mp4'></video>
                     </center>
                   </td>
 
                   <td>
                     <center>
-                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0509_debug_multiview_video32_Frm000_7.mp4'>
+                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0509_debug_multiview_video32_Frm000_7.mp4'></video>
                     </center>
                   </td>
 
                   <td>
                     <center>
-                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/a_baby_panda_reading_a_book.mp4'>
+                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/a_baby_panda_reading_a_book.mp4'></video>
                     </center>
                   </td>
 
                   <td>
                     <center>
-                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0504_debug_multiview_video148_Frm000_1_0.mp4'>
+                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0504_debug_multiview_video148_Frm000_1_0.mp4'></video>
                     </center>
                   </td>
                     </tr>
@@ -367,25 +440,25 @@
 
                   <td>
                     <center>
-                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0504_debug_multiview_video22_Frm000_2_13.mp4'>
+                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0504_debug_multiview_video22_Frm000_2_13.mp4'></video>
                     </center>
                   </td>
 
                   <td>
                     <center>
-                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0510_2ndpart_debug_multiview_video5_Frm000_2.mp4'>
+                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0510_2ndpart_debug_multiview_video5_Frm000_2.mp4'></video>
                     </center>
                   </td>
 
                   <td>
                     <center>
-                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/a_humanoid_robot_playing_the_violin.mp4'>
+                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/a_humanoid_robot_playing_the_violin.mp4'></video>
                     </center>
                   </td>
 
                   <td>
                     <center>
-                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0509_debug_multiview_video25_Frm000_11.mp4'>
+                      <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0509_debug_multiview_video25_Frm000_11.mp4'></video>
                     </center>
                   </td>
                     </tr>
@@ -398,51 +471,25 @@
 
                 <td>
                   <center>
-                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0504_debug_multiview_video81_Frm000_2_4.mp4'>
+                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0504_debug_multiview_video81_Frm000_2_4.mp4'></video>
                   </center>
                 </td>
 
                 <td>
                   <center>
-                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0510_1stpart_debug_multiview_video27_Frm000_0.mp4'>
+                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0510_1stpart_debug_multiview_video27_Frm000_0.mp4'></video>
                   </center>
                 </td>
 
                 <td>
                   <center>
-                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/3D_rendering_of_a_fox_playing_videogame.mp4'>
+                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/3D_rendering_of_a_fox_playing_videogame.mp4'></video>
                   </center>
                 </td>
 
                 <td>
                   <center>
-                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/a_bear_driving_a_car.mp4'>
-                  </center>
-                </td>
-                  </tr>
-              <tr>
-
-                <td>
-                  <center>
-                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0510_1stpart_debug_multiview_video14_Frm000_17.mp4'>
-                  </center>
-                </td>
-
-                <td>
-                  <center>
-                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/A_corgi_playing_with_a_ball.mp4'>
-                  </center>
-                </td>
-
-                <td>
-                  <center>
-                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0510_1stpart_debug_multiview_video22_Frm000_1.mp4'>
-                  </center>
-                </td>
-
-                <td>
-                  <center>
-                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0504_debug_multiview_video30_Frm000_3_4.mp4'>
+                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/a_bear_driving_a_car.mp4'></video>
                   </center>
                 </td>
                   </tr>
@@ -450,51 +497,25 @@
 
                 <td>
                   <center>
-                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0509_debug_multiview_video43_Frm000_1.mp4'>
+                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0510_1stpart_debug_multiview_video14_Frm000_17.mp4'></video>
                   </center>
                 </td>
 
                 <td>
                   <center>
-                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0508_debug_multiview_video26_Frm000_2.mp4'>
+                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/A_corgi_playing_with_a_ball.mp4'></video>
                   </center>
                 </td>
 
                 <td>
                   <center>
-                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0508_debug_multiview_video32_Frm000_7.mp4'>
+                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0510_1stpart_debug_multiview_video22_Frm000_1.mp4'></video>
                   </center>
                 </td>
 
                 <td>
                   <center>
-                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0504_debug_multiview_video2_Frm000_19_4.mp4'>
-                  </center>
-                </td>
-                  </tr>
-              <tr>
-
-                <td>
-                  <center>
-                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0508_debug_multiview_video34_Frm000_17.mp4'>
-                  </center>
-                </td>
-
-                <td>
-                  <center>
-                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/cute_small_cat_sitting_eating_chicken_wiggs_watching_a_movie.mp4'>
-                  </center>
-                </td>
-
-                <td>
-                  <center>
-                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0504_debug_multiview_video84_Frm000_9_0.mp4'>
-                  </center>
-                </td>
-
-                <td>
-                  <center>
-                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0509_debug_multiview_video16_Frm000_8.mp4'>
+                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0504_debug_multiview_video30_Frm000_3_4.mp4'></video>
                   </center>
                 </td>
                   </tr>
@@ -502,25 +523,77 @@
 
                 <td>
                   <center>
-                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/a_monkey_eating_a_candy_bar.mp4'>
+                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0509_debug_multiview_video43_Frm000_1.mp4'></video>
                   </center>
                 </td>
 
                 <td>
                   <center>
-                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0504_debug_multiview_video5_Frm000_13_0.mp4'>
+                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0508_debug_multiview_video26_Frm000_2.mp4'></video>
                   </center>
                 </td>
 
                 <td>
                   <center>
-                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/a_building_on_fire.mp4'>
+                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0508_debug_multiview_video32_Frm000_7.mp4'></video>
                   </center>
                 </td>
 
                 <td>
                   <center>
-                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/Time_lapse_of_a_sunflower_blooming_open.mp4'>
+                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0504_debug_multiview_video2_Frm000_19_4.mp4'></video>
+                  </center>
+                </td>
+                  </tr>
+              <tr>
+
+                <td>
+                  <center>
+                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0508_debug_multiview_video34_Frm000_17.mp4'></video>
+                  </center>
+                </td>
+
+                <td>
+                  <center>
+                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/cute_small_cat_sitting_eating_chicken_wiggs_watching_a_movie.mp4'></video>
+                  </center>
+                </td>
+
+                <td>
+                  <center>
+                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0504_debug_multiview_video84_Frm000_9_0.mp4'></video>
+                  </center>
+                </td>
+
+                <td>
+                  <center>
+                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0509_debug_multiview_video16_Frm000_8.mp4'></video>
+                  </center>
+                </td>
+                  </tr>
+              <tr>
+
+                <td>
+                  <center>
+                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/a_monkey_eating_a_candy_bar.mp4'></video>
+                  </center>
+                </td>
+
+                <td>
+                  <center>
+                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0504_debug_multiview_video5_Frm000_13_0.mp4'></video>
+                  </center>
+                </td>
+
+                <td>
+                  <center>
+                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/a_building_on_fire.mp4'></video>
+                  </center>
+                </td>
+
+                <td>
+                  <center>
+                    <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/Time_lapse_of_a_sunflower_blooming_open.mp4'></video>
                   </center>
                 </td>
                   </tr>
@@ -529,25 +602,25 @@
 
                     <td>
                       <center>
-                        <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/bunny_sample_demo.mp4'>
+                        <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/bunny_sample_demo.mp4'></video>
                       </center>
                     </td>
 
                     <td>
                       <center>
-                        <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0510_1stpart_debug_multiview_video11_Frm000_14.mp4'>
+                        <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/repo_0510_1stpart_debug_multiview_video11_Frm000_14.mp4'></video>
                       </center>
                     </td>
 
                     <td>
                       <center>
-                        <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/tulip_sample_demo.mp4'>
+                        <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/tulip_sample_demo.mp4'></video>
                       </center>
                     </td>
 
                     <td>
                       <center>
-                        <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/a_goat_drinking_beer.mp4'>
+                        <video class='round' autoplay muted loop playsinline style='width:200px' src='resources/goodvideos_144/a_goat_drinking_beer.mp4'></video>
                       </center>
                     </td>
                       </tr>
